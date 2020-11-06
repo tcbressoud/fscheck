@@ -1,0 +1,120 @@
+#!/bin/bash
+
+g++ main.cpp tree.cpp tree_node.cpp -o xcheck -w
+
+echo "bad inode 1:"
+./xcheck images/bad_inode_type1.img
+
+echo "bad inode 2:"
+./xcheck images/bad_inode_type2.img
+
+echo "bad inode 3:"
+./xcheck images/bad_inode_type3.img
+
+echo "bad dir ptr 1:"
+./xcheck images/bad_dir_ptr1.img
+
+echo "bad dir ptr 2:"
+./xcheck images/bad_dir_ptr2.img
+
+echo "bad ind ptr 1:"
+./xcheck images/bad_ind_ptr1.img
+
+echo "bad ind ptr 2:"
+./xcheck images/bad_ind_ptr2.img
+
+echo "bad ind ptr 3:"
+./xcheck images/bad_ind_ptr3.img
+
+echo "bad ind ptr 4:"
+./xcheck images/bad_ind_ptr4.img
+
+echo "bad root 1:"
+./xcheck images/bad_root1.img
+
+echo "bad root 2:"
+./xcheck images/bad_root2.img
+
+echo "bad root 3:"
+./xcheck images/bad_root3.img
+
+echo "bad dir format 1:"
+./xcheck images/bad_dir_format1.img
+
+echo "bad dir format 2:"
+./xcheck images/bad_dir_format2.img
+
+echo "bad dir format 3:"
+./xcheck images/bad_dir_format3.img
+
+echo "bad dir format 4:"
+./xcheck images/bad_dir_format4.img
+
+echo "bad inode addr 1:"
+./xcheck images/bad_inode_addr1.img
+
+echo "bad inode addr 2:"
+./xcheck images/bad_inode_addr2.img
+
+echo "bad bitmap 1:"
+./xcheck images/bad_bitmap1.img
+
+echo "bad bitmap 2:"
+./xcheck images/bad_bitmap2.img
+
+echo "reused dir ptr 1:"
+./xcheck images/reused_dir_ptr1.img
+
+echo "reused dir ptr 2:"
+./xcheck images/reused_dir_ptr2.img
+
+echo "reused ind ptr 1:"
+./xcheck images/reused_ind_ptr1.img
+
+echo "reused ind ptr 2:"
+./xcheck images/reused_ind_ptr2.img
+
+echo "bad mark use 1:"
+./xcheck images/bad_mark_use1.img
+
+echo "bad mark use 2:"
+./xcheck images/bad_mark_use2.img
+
+echo "bad dir use 1:"
+./xcheck images/bad_dir_use1.img
+
+echo "bad dir use 2:"
+./xcheck images/bad_dir_use2.img
+
+echo "ind dir 1:"
+./xcheck images/ind_dir1.img
+
+echo "ind dir 2:"
+./xcheck images/ind_dir2.img
+
+echo "bad link count 1:"
+./xcheck images/bad_link_count1.img
+
+echo "bad link count 2:"
+./xcheck images/bad_link_count2.img
+
+echo "bad link count 3:"
+./xcheck images/bad_link_count3.img
+
+echo "link count ok 1:"
+./xcheck images/link_count_ok1.img
+
+echo "bad dir ref 1:"
+./xcheck images/bad_dir_ref1.img
+
+echo "bad dir ref 2:"
+./xcheck images/bad_dir_ref2.img
+
+echo "bad dir ref 3:"
+./xcheck images/bad_dir_ref3.img
+
+echo "bad parent 1:"
+./xcheck images/bad_parent1.img
+
+echo "bad parent 2:"
+./xcheck images/bad_parent2.img
